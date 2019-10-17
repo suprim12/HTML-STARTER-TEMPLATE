@@ -1,0 +1,23 @@
+// COLORS
+$colors: (primary: #22222a,
+    secondary: #888888,
+    link: #e7272d,
+    headingtext: #333,
+    ptext: #575757,
+    subheadingtext:#9999);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$bg: color(primary);
+
+@function set-text-color($bg) {
+    @if (lightness($bg) > 40) {
+        @return #595971;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
