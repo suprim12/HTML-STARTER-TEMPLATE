@@ -2,6 +2,10 @@
 @import './imports/variables';
 @import './imports/global';
 @import './imports/utils';
+@import './imports/breakpoints';
 @import './imports/grid';
-// Pages
-@import './pages/front-page';
+// LAYOUTS
+@import './layouts/header';
+@import './layouts/footer';
+// PAGES
+@import './sections/banner';

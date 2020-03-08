@@ -1,0 +1,23 @@
+.header {
+    background-color: red;
+
+    @include media('<=desktop') {
+        background-color: blue;
+    }
+
+    @include media('<=tablet') {
+        background-color: blue;
+    }
+
+    @include media('<=phone') {
+        background-color: blue;
+    }
+}
+
+.footer {
+    background-color: red;
+
+    @include media('<=phone') {
+        background-color: blue;
+    }
+}
