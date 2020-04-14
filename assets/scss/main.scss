@@ -4,8 +4,14 @@
 @import './imports/utils';
 @import './imports/breakpoints';
 @import './imports/grid';
+@import './imports/form';
+@import './imports/btn';
 // LAYOUTS
 @import './layouts/header';
 @import './layouts/footer';
+// SECTIONS
+@import './sections/article_card';
 // PAGES
 @import './sections/banner';
+@import './pages/login';
+@import './pages/profile';

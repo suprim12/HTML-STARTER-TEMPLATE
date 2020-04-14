@@ -21,3 +21,89 @@
         background-color: blue;
     }
 }
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    .wrapper,
+    .wrapper-fluid {
+        display: flex;
+        align-items: center;
+    }
+
+    .site-logo {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $primary-color;
+    }
+
+    .collapse {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-extend {
+        display: flex;
+        list-style: none;
+        align-self: flex-end;
+        margin-left: 0;
+        color: black;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        &.right {
+            margin-left: auto;
+        }
+    }
+
+    .nav-link {
+        a {
+            &.text {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 1.2rem;
+                cursor: pointer;
+
+                i {
+                    font-size: 1.1rem;
+                }
+            }
+
+            &.icon {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 0.5rem;
+                cursor: pointer;
+
+                i {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        &.nav-btn {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+
+            &.nav-btn-primary {
+                background-color: $primary-color;
+
+                a {
+                    color: $text-white;
+                }
+
+                &:hover {
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+}

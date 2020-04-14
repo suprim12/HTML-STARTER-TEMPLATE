@@ -25,4 +25,9 @@ img {
 
 a {
     text-decoration: none;
+
+    &:hover {
+        color: $primary-color;
+        cursor: pointer;
+    }
 }
